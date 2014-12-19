@@ -72,4 +72,3 @@
   (cond [(< y 0) 0]
         [(<= (vector-length mask) y) 0]
         [else (bitwise-and 1 (arithmetic-shift (vector-ref mask y) (- x)))]))
-
